@@ -14,6 +14,7 @@
 		77CE3820225E9BE10020016F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE381F225E9BE10020016F /* main.m */; };
 		77CE3828225E9E8D0020016F /* NYCContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE3827225E9E8D0020016F /* NYCContactsTableViewController.m */; };
 		77CE382B225E9EA30020016F /* NYCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE382A225E9EA30020016F /* NYCDetailViewController.m */; };
+		77CE382E225E9FDE0020016F /* NYCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE382D225E9FDE0020016F /* NYCContact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		77CE3827225E9E8D0020016F /* NYCContactsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCContactsTableViewController.m; sourceTree = "<group>"; };
 		77CE3829225E9EA30020016F /* NYCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYCDetailViewController.h; sourceTree = "<group>"; };
 		77CE382A225E9EA30020016F /* NYCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCDetailViewController.m; sourceTree = "<group>"; };
+		77CE382C225E9FDE0020016F /* NYCContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYCContact.h; sourceTree = "<group>"; };
+		77CE382D225E9FDE0020016F /* NYCContact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				77CE3827225E9E8D0020016F /* NYCContactsTableViewController.m */,
 				77CE3829225E9EA30020016F /* NYCDetailViewController.h */,
 				77CE382A225E9EA30020016F /* NYCDetailViewController.m */,
+				77CE382C225E9FDE0020016F /* NYCContact.h */,
+				77CE382D225E9FDE0020016F /* NYCContact.m */,
 			);
 			path = ContactsMRC;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 				77CE3828225E9E8D0020016F /* NYCContactsTableViewController.m in Sources */,
 				77CE3820225E9BE10020016F /* main.m in Sources */,
 				77CE3812225E9BE10020016F /* AppDelegate.m in Sources */,
+				77CE382E225E9FDE0020016F /* NYCContact.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
