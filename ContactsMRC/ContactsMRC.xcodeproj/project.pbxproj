@@ -15,6 +15,7 @@
 		77CE3828225E9E8D0020016F /* NYCContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE3827225E9E8D0020016F /* NYCContactsTableViewController.m */; };
 		77CE382B225E9EA30020016F /* NYCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE382A225E9EA30020016F /* NYCDetailViewController.m */; };
 		77CE382E225E9FDE0020016F /* NYCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE382D225E9FDE0020016F /* NYCContact.m */; };
+		77CE3831225EA1C50020016F /* NYCContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE3830225EA1C50020016F /* NYCContactsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		77CE382A225E9EA30020016F /* NYCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCDetailViewController.m; sourceTree = "<group>"; };
 		77CE382C225E9FDE0020016F /* NYCContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYCContact.h; sourceTree = "<group>"; };
 		77CE382D225E9FDE0020016F /* NYCContact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCContact.m; sourceTree = "<group>"; };
+		77CE382F225EA1C50020016F /* NYCContactsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYCContactsController.h; sourceTree = "<group>"; };
+		77CE3830225EA1C50020016F /* NYCContactsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCContactsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,14 +74,32 @@
 				77CE381B225E9BE10020016F /* LaunchScreen.storyboard */,
 				77CE381E225E9BE10020016F /* Info.plist */,
 				77CE381F225E9BE10020016F /* main.m */,
+				77CE3832225EA1C90020016F /* View Controllers */,
+				77CE3833225EA1D40020016F /* Model */,
+				77CE382F225EA1C50020016F /* NYCContactsController.h */,
+				77CE3830225EA1C50020016F /* NYCContactsController.m */,
+			);
+			path = ContactsMRC;
+			sourceTree = "<group>";
+		};
+		77CE3832225EA1C90020016F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				77CE3826225E9E8D0020016F /* NYCContactsTableViewController.h */,
 				77CE3827225E9E8D0020016F /* NYCContactsTableViewController.m */,
 				77CE3829225E9EA30020016F /* NYCDetailViewController.h */,
 				77CE382A225E9EA30020016F /* NYCDetailViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		77CE3833225EA1D40020016F /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				77CE382C225E9FDE0020016F /* NYCContact.h */,
 				77CE382D225E9FDE0020016F /* NYCContact.m */,
 			);
-			path = ContactsMRC;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77CE382B225E9EA30020016F /* NYCDetailViewController.m in Sources */,
+				77CE3831225EA1C50020016F /* NYCContactsController.m in Sources */,
 				77CE3828225E9E8D0020016F /* NYCContactsTableViewController.m in Sources */,
 				77CE3820225E9BE10020016F /* main.m in Sources */,
 				77CE3812225E9BE10020016F /* AppDelegate.m in Sources */,

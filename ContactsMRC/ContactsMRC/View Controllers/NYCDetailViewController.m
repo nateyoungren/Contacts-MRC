@@ -29,4 +29,9 @@
     
 }
 
+- (void)setContact:(NYCContact *)contact {
+    _contact = contact;
+    [_contact retain];
+}
+
 @end
