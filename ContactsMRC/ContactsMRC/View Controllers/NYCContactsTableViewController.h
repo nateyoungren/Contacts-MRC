@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class NYCContactsController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NYCContactsTableViewController : UITableViewController
+
+@property (nonatomic, strong) NYCContactsController *controller;
 
 @end
 

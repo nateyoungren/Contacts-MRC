@@ -17,6 +17,14 @@
 
 @implementation NYCContactsController
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _internalContacts = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
 - (void)addContactWithName:(NSString *)name email:(NSString *)email phoneNumber:(int)phone {
     NYCContact *contact = [[NYCContact alloc] initWithName:name email:email phoneNumber:phone];
     [[self internalContacts] addObject:contact];

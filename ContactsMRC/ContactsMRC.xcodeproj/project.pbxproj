@@ -76,8 +76,7 @@
 				77CE381F225E9BE10020016F /* main.m */,
 				77CE3832225EA1C90020016F /* View Controllers */,
 				77CE3833225EA1D40020016F /* Model */,
-				77CE382F225EA1C50020016F /* NYCContactsController.h */,
-				77CE3830225EA1C50020016F /* NYCContactsController.m */,
+				77CE3834225EA5490020016F /* Model Controller */,
 			);
 			path = ContactsMRC;
 			sourceTree = "<group>";
@@ -100,6 +99,15 @@
 				77CE382D225E9FDE0020016F /* NYCContact.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		77CE3834225EA5490020016F /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77CE382F225EA1C50020016F /* NYCContactsController.h */,
+				77CE3830225EA1C50020016F /* NYCContactsController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

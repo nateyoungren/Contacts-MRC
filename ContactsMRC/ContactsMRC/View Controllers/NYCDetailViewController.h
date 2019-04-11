@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NYCContact.h"
+
+@class NYCContactsController;
+@class NYCContact;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NYCDetailViewController : UIViewController
 
 @property (retain, nonatomic) NYCContact *contact;
+@property (retain, nonatomic) NYCContactsController *controller;
 
 @end
 
