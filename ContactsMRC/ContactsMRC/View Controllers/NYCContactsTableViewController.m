@@ -29,8 +29,20 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         _controller = [[NYCContactsController alloc] init];
+
+        [self.controller addContactWithName:@"Bob" email:@"email" phoneNumber:55555555];
+        [self.controller addContactWithName:@"Tim" email:@"email" phoneNumber:55555555];
+        
+        NYCContact *first = [[[self controller] contacts] firstObject];
+        [self.controller removeContact:first];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [_controller release];
+    [super dealloc];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -62,11 +74,16 @@
         NSIndexPath *index = [[self tableView] indexPathForSelectedRow];
         addVC.contact = self.controller.contacts[index.row];
         addVC.controller = self.controller;
+//        [addVC release];
+//        [index release];
+//        [[self controller] release];
     }
     
     if ([segue.identifier isEqualToString:@"AddShow"]) {
         NYCDetailViewController *addVC = segue.destinationViewController;
         addVC.controller = self.controller;
+//        [addVC release];
+//        [[self controller] release];
     }
 }
 

@@ -14,11 +14,15 @@
     
     self = [super init];
     if (self) {
-        _name = name;
-        _emailAddress = email;
+        _name = [name copy];
+        _emailAddress = [email copy];
         _phoneNumber = phone;
     }
     return self;
+}
+
+- (void)setName:(NSString *)name {
+    _name = [name copy];
 }
 
 @end

@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithName:(NSString *)name email:(NSString *)email phoneNumber:(int)phone;
 
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *emailAddress;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *emailAddress;
 @property (nonatomic, assign) int phoneNumber;
 
 @end

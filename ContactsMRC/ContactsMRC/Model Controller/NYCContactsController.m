@@ -39,8 +39,6 @@
 
 - (void)removeContact:(NYCContact *)contact {
     [[self internalContacts] removeObject:contact];
-    [contact release];
-    contact = nil;
 }
 
 - (NSArray<NYCContact *> *)contacts {

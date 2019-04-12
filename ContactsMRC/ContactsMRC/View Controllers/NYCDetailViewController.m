@@ -54,15 +54,18 @@
 }
 
 - (void)updateViews {
-    if (self.contact) {
-        [self.navigationItem setTitle:@"Update Contact"];
-        self.nameTextField.text = self.contact.name;
-        self.emailTextField.text = self.contact.emailAddress;
-        
-        NSNumber *phoneNumber = [NSNumber numberWithInt:self.contact.phoneNumber];
-        self.phoneNumberTextField.text = [phoneNumber stringValue];
-    } else {
-        [self.navigationItem setTitle:@"Add Contact"];
+    if (self.isViewLoaded) {
+        if (self.contact) {
+            [self.navigationItem setTitle:@"Update Contact"];
+            NSLog(@"%@", self.contact.emailAddress);
+            self.nameTextField.text = self.contact.name;
+            self.emailTextField.text = self.contact.emailAddress;
+            
+            NSNumber *phoneNumber = [NSNumber numberWithInt:self.contact.phoneNumber];
+            self.phoneNumberTextField.text = [phoneNumber stringValue];
+        } else {
+            [self.navigationItem setTitle:@"Add Contact"];
+        }
     }
 }
 
